@@ -14,7 +14,7 @@ if (session()->getFlashdata('success')):?>
 <a href="/information/create" class="btn btn-primary">Add Information</a>
 <table class="table">
     <thead>
-        <tr>
+        <tr class="table-primary">
             <th>Id</th>
             <th>Name</th>
             <th>Birthdate</th>
@@ -25,7 +25,7 @@ if (session()->getFlashdata('success')):?>
     </thead>
     <tbody>
     <?php foreach($information as $informations): ?>
-            <tr>
+            <tr class="table-danger">
                 <th scope= "row"><?= $informations ['Id']; ?></th>
                 <td><?= $informations['name'];?></td>
                 <td><?= $informations['birthdate'];?></td>
